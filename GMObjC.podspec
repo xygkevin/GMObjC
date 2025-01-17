@@ -16,9 +16,10 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.frameworks   = "Security"
+  s.static_framework = true
   
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.13'
-
+  
   s.dependency "GMOpenSSL", "~> 3.1.2"
 end
